@@ -1,9 +1,13 @@
+import Navbar from "../components/Navbar"
+import ProductList from "../components/ProductList"
 
 
 const HomePage = () =>{
     return(
         <>
-        <h1>Home Page</h1>
+            <Navbar />
+            <h1>Home Page</h1>
+            <ProductList />
         </>
     )
 }

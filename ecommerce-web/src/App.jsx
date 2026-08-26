@@ -6,8 +6,8 @@ import AuthPage from './pages/Auth'
 import CheckoutPage from './pages/Checkout'
 
 function App() {
- console.log('hello')
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage/>} />
@@ -15,6 +15,7 @@ function App() {
         <Route path='/checkout' element={<CheckoutPage/>} />
       </Routes>
     </BrowserRouter>
+    </>
   )
 }
 
