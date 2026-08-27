@@ -4,10 +4,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/Home'
 import AuthPage from './pages/Auth'
 import CheckoutPage from './pages/Checkout'
+import AuthContextProvider from './context/AuthContextProvider'
 
 function App() {
   return (
     <>
+    <AuthContextProvider>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage/>} />
@@ -15,6 +17,7 @@ function App() {
         <Route path='/checkout' element={<CheckoutPage/>} />
       </Routes>
     </BrowserRouter>
+    </AuthContextProvider>
     </>
   )
 }
